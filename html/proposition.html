@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/func.js"></script>
+        <title>Bibliothèque Municipale - Questionnaire</title>
+    </head>
+    <body>
+        <header>
+            
+            <div>
+                <ul class="menu">
+                    <li><a href="acceuil.html" class="retour">Bibliothèque Municipale</a></li>
+                    <li><a href="catalogue.html" class="button">Explorer le catalogue</a></li>
+                    <li><a href="proposition.html" class="button">Propositions</a></li>
+                </ul>
+            </div>
+        </header>
+                    
+                    
+        <section>
+            <form method="post" name="propAjout">
+                <fieldset name="typeLivre">
+                  <legend>Quel type de livre proposer vous ? </legend>
+                  <input type="radio" id="roman" name="liromanvre">
+                  <label for="livre"> Roman</label>
+        
+                  <input type="radio" id="manga" name="manga">
+                  <label for="manga"> Manga</label>
+        
+                  <input type="radio" id="bd" name="bd">
+                  <label for="bd"> Bande dessiner</label>
+        
+                </fieldset>
+                <fieldset name="info">
+                  <legend>Informations sur le mot de passe </legend>
+                  
+                  <input id="titre" name="titre">
+                  <label> Titre</label>
+
+                  <input id="auteur"> 
+                  <label> Auteur</label>
+                  
+
+                  <select id="Genre">
+                    <option value="">--Veuillez choisir le genre--</option>
+                    <option value="Fantaisy">Fantaisy</option>
+                    <option value="SF">Science Fiction</option>
+                    <option value="romance">Romance</option>
+                    <option value="bio">biographie</option>
+                    <option value="educatif">educatif</option>
+                  </select>
+        
+                </fieldset>    
+                <fieldset name="ajout">
+                  <legend>Proposer le livre</legend>
+                  <input type="submit" value="Envoyé" onclick="">
+                </fieldset> 
+                  
+              </form>
+        </section>
+        <footer>
+            <a href="apropos.html" class="button">À propos</a>
+        </footer>
+    </body>
+</html>
