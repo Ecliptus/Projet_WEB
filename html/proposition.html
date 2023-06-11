@@ -19,16 +19,16 @@
         </div>
         <br><br><br>
         <section>
-            <form method="post" name="propAjout">
+            <form name="propAjout" id="monFormulaire" onsubmit="return ajouter()">
                 <fieldset name="typeLivre">
                   <legend>Quel type de livre proposer vous ? </legend>
-                  <input type="radio" id="roman" name="liromanvre">
+                  <input type="radio" id="roman" name="type">
                   <label for="livre"> Roman</label>
         
-                  <input type="radio" id="manga" name="manga">
+                  <input type="radio" id="manga" name="type">
                   <label for="manga"> Manga</label>
         
-                  <input type="radio" id="bd" name="bd">
+                  <input type="radio" id="bd" name="type">
                   <label for="bd"> Bande dessiner</label>
         
                 </fieldset>
@@ -42,7 +42,7 @@
                   <label> Auteur</label>
                   
 
-                  <select id="Genre">
+                  <select id="genre">
                     <option value="">--Veuillez choisir le genre--</option>
                     <option value="Fantaisy">Fantaisy</option>
                     <option value="SF">Science Fiction</option>
@@ -54,10 +54,26 @@
                 </fieldset>    
                 <fieldset name="ajout">
                   <legend>Proposer le livre</legend>
-                  <input type="submit" value="Envoyé" onclick="">
+                  <input type="submit" value="Envoyé">
                 </fieldset> 
                   
               </form>
+        </section>
+        
+        <section>
+          <table id="monTableau">
+            <thead>
+              <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Genre</th>
+                <th>Type de livre</th>
+              </tr>
+            </thead>
+            <tbody id="bodyTableau">
+              <!-- Lignes existantes -->
+            </tbody>
+          </table>
         </section>
         <footer>
             <a href="apropos.html" class="button">À propos</a>
