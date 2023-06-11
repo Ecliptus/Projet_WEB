@@ -27,7 +27,7 @@ function filterTable() {
   var rows = table.getElementsByTagName("tr");
 
   // Parcourir toutes les lignes de la table et masquer celles qui ne correspondent pas à la recherche
-  for (var i = 0; i < rows.length; i++) {
+  for (var i = 1; i < rows.length; i++) {
     var cells = rows[i].getElementsByTagName("td");
     var found = false;
     for (var j = 0; j < cells.length; j++) {
