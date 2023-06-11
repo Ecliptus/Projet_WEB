@@ -12,6 +12,16 @@ body, h1, h2, p, label, input, button {
     padding: 20px;
     text-align: center;
   }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align:left;
+    font-size: 14px;
+    color: #555;
+}
   
   header h1 {
     font-size: 32px;
@@ -140,4 +150,61 @@ body, h1, h2, p, label, input, button {
     font-size: x-large;
     background-color: #f1f1f1;
     cursor: pointer;
+  }
+
+/*###############################################################################*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    bottom: 30px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+/*###############################################################################*/
+  form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  .radio {
+    margin-right: 5px;
   }
